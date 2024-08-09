@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytz
 
-from get_version import get_version
+from .get_version import get_version
 
 
 def bump_version(
