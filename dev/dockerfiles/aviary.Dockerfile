@@ -2,6 +2,8 @@ FROM python:3.12-slim as builder
 
 WORKDIR /aviary
 
+ARG VERSION
+
 LABEL org.opencontainers.image.title="aviary" \
     org.opencontainers.image.description="Composable inference and postprocessing pipeline for remote sensing data" \
     org.opencontainers.image.authors="Marius Maryniak (marius.maryniak@w-hs.de)" \
