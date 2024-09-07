@@ -27,3 +27,5 @@ jobs:
           content-filepath: ./lychee/out.md
           labels: |
             docs
+          assignees: |
+            mrsmrynk
