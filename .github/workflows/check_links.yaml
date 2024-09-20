@@ -19,7 +19,7 @@ jobs:
       - name: Check links
         uses: lycheeverse/lychee-action@v1
         with:
-          args: --exclude-path docs/broken_link.md --include "*.ipynb" -- .
+          args: --exclude-path docs/broken_link.md -- .
 
       - name: Create issue
         if: env.lychee_exit_code != 0
