@@ -24,7 +24,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip setuptools wheel nbconvert
+          python -m pip install --upgrade pip setuptools wheel
+          pip install -r dev/requirements/check_links_requirements.txt
 
       - name: Convert notebooks to markdown
         run: |
