@@ -34,8 +34,10 @@ jobs:
         uses: lycheeverse/lychee-action@v1
         with:
           args: |
+            --exclude .*\/maps\/.*\.html$
             --exclude-path docs/broken_link.md
-            -- .
+            --user-agent curl
+            .
 
       - name: Create issue
         if: env.lychee_exit_code != 0
