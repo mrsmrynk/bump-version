@@ -41,8 +41,7 @@ jobs:
             --exclude-path docs/broken_link.md
             --user-agent curl
             .
-          fail: |
-            ${{ github.event_name == 'pull_request' || github.event_name == 'push' }}
+          fail: ${{ github.event_name == 'pull_request' || github.event_name == 'push' }}
 
       - name: Create issue
         if: env.lychee_exit_code != 0
